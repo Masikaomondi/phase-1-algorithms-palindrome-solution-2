@@ -1,8 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for(i=0;i<word.length/2;i++){
+    let k = word.length-1-i;
+    let lastChar = word[k];
+    let startChar = word[i];
+    if(startChar === lastChar){
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
-/* 
+/*
   Add your pseudocode here
 */
 
